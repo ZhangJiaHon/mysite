@@ -1,0 +1,18 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+<p>HTML為網頁的基本架構，可以讓瀏覽器了解位置在哪，
+    就像人有四肢（手、腳等），可以讓你分辨哪裡是手哪裡是腳，不至於搞錯。</p>
+<img src="/static/personal/img/html1.png"/>
+
+<p>從上圖來看基本上就分為head和body兩個部份；在head內部&lt;title&gt;可將頁面標籤命名，
+    &lt;link&gt;內用來連接額外的stylesheet，用來修飾網頁讓其看起來較美觀，就像人穿了衣服一樣
+    就能顯得較為不同。</p><br>
+<p>body內部就放置想要呈現的內容，&lt;div&gt;可用來分段或劃分成一區，方便對其修飾（如id="introduction"）
+    這樣一來便不會影響到其他部份的樣式，如字體大小顏色等。</p><br>
+<p>&lt;a&gt;為用來連結其他網頁，&lt;h3&gt;則用來顯示較重要的標題，3則是顯示字體的大小，有1~6之分，&lt;ul&gt;用來建立列表，
+    其下的&lt;li&gt;就用來建立每個項目，&lt;p&gt;一般用來為文字或文章分段。</p><br>
+<p>最一開始的&lt;!DOCTYPE html&gt是用來宣稱這個文件是HTML的類型，版本為HTML5，&lt;html&gt;則是用來
+    告訴瀏覽器這是HTML的檔案。</p><br>
+<p>上述只是一些較基本的tag，若要使用其他的，查HTML的文檔了解其他的功能。</p>
+{% endblock %}
