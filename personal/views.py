@@ -11,3 +11,7 @@ def index(request):
 
 def about(request):
     return render(request, 'personal/about.html')
+
+def docker(request):
+    return render(request, 'personal/docker.html')
+

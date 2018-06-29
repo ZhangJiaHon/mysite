@@ -20,4 +20,5 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('about', views.about, name='about'),
+    path('docker', views.docker, name='docker'),
 ]
