@@ -7,11 +7,21 @@
     語句或用法可以再到文擋上找找。</p><br>
 <img src="/static/personal/img/img_docker_1.png" alt="picture">
 <p>&nbsp</p>
-<p>以上是根據官網所做出來簡單的一個網頁，依據我的理解，containers就像一個比較小型的電腦，
+<p>以上是根據官網使用Flask所做出來簡單的一個網頁，依據我的理解，containers就像一個比較小型的電腦，
     只處理特定的事物，不需要其他的功能，所以體積小速度也快，
-    以往的VM因為把整個作業系統都安裝上了，所以體積大速度也比較慢，那要如何建立container，就使用Docker。</p>
-    
-<h2>未完</h2>
+    以往的VM因為把整個作業系統都安裝上了，所以體積大速度也比較慢，那要如何建立container，就使用Docker。</p><br>
+<p>接下來可以使用docker compose來管理多個container，來達到有效利用資源目的，
+    例如：要運行一個使用Flask的container，可是我不想把cpu都用來處理它，
+    就可以藉由這個工具只分配10％cpu的效能給它。</p><br>
+<img src="/static/personal/img/img_docker_2.png" alt="picture" width=650>
+<p>&nbsp</p>
+<p>根據官網上設置，建立docker-compose.yml這樣一個文件來管理，依上圖所示，
+    開了5個container，若想做其他變動，可以修改yml文件內的參數，來達到想要的設置。</p><br>
+<p>&nbsp</p>
+<p>要執行上述功能，要先run docker swarm init，swarm可以說是一群跑著Docker的機器，
+    這是官方說法，假設今天紅、綠、藍代表學校參加圍棋比賽，三人都會下圍棋表示都會同一種功能，
+那麼誰要先出場比賽，那就是swarm manager來管理。</p>
+
 
 
 {% endblock %}
