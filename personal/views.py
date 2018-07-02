@@ -15,3 +15,6 @@ def about(request):
 def docker(request):
     return render(request, 'personal/docker.html')
 
+def docker_2(request):
+    return render(request, 'personal/docker_2.html')
+

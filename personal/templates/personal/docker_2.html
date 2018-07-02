@@ -1,0 +1,22 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+<p>接下來測試其他種用法，uwsgi-nginx-flask-docker，根據
+    <a href="https://github.com/tiangolo/uwsgi-nginx-flask-docker">此大神</a>
+    ，他已經先建好一部分，修改一下其做法。</p><br>
+<img src="/static/personal/img/img_docker_6.png" alt="picture">
+<p>&nbsp</p>
+<p>不特意建image，用compose來管理，畢竟會修改不少次，這樣一來就不用每次都建一次，還要指定port。</p><br>
+<img src="/static/personal/img/img_docker_7.png" alt="picture">
+<p>&nbsp</p>
+<p>嘗試執行一下，確實能打開，不過第一次的時候沒辦法直接讀到index.html，後來發現忘了import os，
+    加上去後就可以了。</p><br>
+<img src="/static/personal/img/img_docker_8.png" alt="picture">
+<p>&nbsp</p>
+<p>測試建成的Jinja template，也確實能使用，只要改上面網址hello/後的名子就能讓網頁變化</p><br>
+<img src="/static/personal/img/img_docker_9.png" alt="picture">
+<p>&nbsp</p>
+<p>不過因為nginx已經先建好了，若要發布到對外的ip就需要去改nginx.conf，我去container底下想要看怎麼設定，
+    結果發現沒有裝vim，只能用cat看，若真的要發布的話大概要裝個編譯器去改它。</p><br>
+{% endblock %}
