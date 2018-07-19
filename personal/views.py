@@ -18,3 +18,6 @@ def docker(request):
 def docker_2(request):
     return render(request, 'personal/docker_2.html')
 
+def my_project(request):
+    return render(request, 'personal/my_project.html')
+

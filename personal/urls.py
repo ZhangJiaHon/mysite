@@ -22,4 +22,5 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('docker', views.docker, name='docker'),
     path('docker_2', views.docker_2, name='docker_2'),
+    path('my_project', views.my_project, name='my_project'),
 ]
