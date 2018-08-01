@@ -1,6 +1,39 @@
-{% extends "personal/header.html" %}
-
+{% extends 'personal/temp.html' %}
 {% block content %}
-<p>Python!</p>
+<main>
+    <h1 class="lg-text">My
+        <span>Python</span>
+    </h1>
 
+    <div class="boxes">
+
+        <div class="boxes-item">
+            <a href="{% url 'pythonqt_1' %}">
+                <img src="/static/personal/img/img_demo_pyqt5_1.png" alt="python">
+            </a>
+            <a href="{% url 'pythonqt_1' %}" class="btn-light">
+                PyQt5-1
+            </a>
+        </div>
+
+        <div class="boxes-item">
+            <a href="{% url 'pythonqt_2' %}">
+                <img src="/static/personal/img/img_demo_pyqt5_2.png" alt="python">
+            </a>
+            <a href="{% url 'pythonqt_2' %}" class="btn-light">
+                PyQt5-2
+            </a>
+        </div>
+
+        <div class="boxes-item">
+            <a href="{% url 'pythonqt_3' %}">
+                <img src="/static/personal/img/img_demo_pyqt5_3.png" alt="python">
+            </a>
+            <a href="{% url 'pythonqt_3' %}" class="btn-light">
+                PyQt5-3
+            </a>
+        </div>
+
+    </div>
+</main>
 {% endblock %}

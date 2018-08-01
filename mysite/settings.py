@@ -31,9 +31,8 @@ ALLOWED_HOSTS = ['35.201.229.186', 'localhost', '127.0.0.1', 'hong.business']
 # Application definition
 
 INSTALLED_APPS = [
-    'JavaScript',
-    'HTML',
-    'CSS',
+    'project',
+    'learn',
     'python',
     'personal',
     'django.contrib.admin',

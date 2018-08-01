@@ -18,9 +18,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('about', views.about, name='about'),
-    path('index', views.index, name='index'),
-    path('learn', views.learn, name='learn'),
-    path('project', views.project, name='project'),
+    path('', views.learn, name='learn'),
+    path('html', views.html, name='html'),
+    path('css', views.css, name='css'),
+    path('javascript', views.javascript, name='javascript'),
+    path('docker', views.docker, name='docker'),
 ]

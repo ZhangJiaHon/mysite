@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'personal/css/main.css' %}">
+    <title>blue page</title>
+</head>
+<body id="bg-img">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-item">
+                    <a href="/" class="menu-item--active">
+                        HOME
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/about" class="menu-item--active">
+                        ABOUT
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/learn/" class="menu-item--active">
+                        LEARN
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/python/" class="menu-item--active">
+                        PYTHON
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/project/" class="menu-item--active">
+                        PROJECT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'personal/js/main.js' %}"></script>
+
+</body>
+</html>

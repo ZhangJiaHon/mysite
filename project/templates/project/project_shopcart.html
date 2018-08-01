@@ -1,0 +1,39 @@
+{% extends 'personal/temp.html' %}
+
+{% block content %}
+<main>
+    <button onclick="reTop()" class="btn-retop">Top</button>
+    
+    <h1 class="lg-text">shop cart
+        <span></span>
+    </h1>
+    
+    <p>這是利用docker、flask、uwsgi、nginx、一點RWD做成的網站，基本上有登入系統、管理員等，做完後發現有些需要改進，
+        例如︰code有點亂、名子的命名、商品的確定可以用primary key從database中取出會比較準確，
+        用name來篩選會有問題等等。</p>
+    <p>這是還沒有任何東西時的首頁。</p>
+    <img src="/static/personal/img/img_flask_1.png">
+    <p>先在網址後加上admin進入管理系統，會像以下圖示。</p>
+    <img src="/static/personal/img/img_flask_2.png">
+    <p>登入admin後，會像以下圖示。</p>
+    <img src="/static/personal/img/img_flask_3.png">
+    <p>按下左方add post後，便可以添加一些內容。</p>
+    <img src="/static/personal/img/img_flask_4.png">
+    <p>按下左方post sheet後，可以進入修改的畫面，並做刪除的動作。</p>
+    <img src="/static/personal/img/img_flask_5.png">
+    <p>add goods 和goods sheet 也是相同的功能，底下也有管理帳戶的功能。</p>
+    <img src="/static/personal/img/img_flask_17.png">
+    <p>都加入好後會像下圖所示，在最上方的商品會保持最新加入的三個商品。</p>
+    <img src="/static/personal/img/img_flask_9.png">
+    <p>點擊NEW!底下的標題，進入到當時發布的內容，就像Blog一樣。</p>
+    <img src="/static/personal/img/img_flask_10.png">
+    <p>接下來是到放商品的地方。</p>
+    <img src="/static/personal/img/img_flask_13.png">
+    <p>這是訂單的狀態。</p>
+    <img src="/static/personal/img/img_flask_14.png">
+    <p>結帳區。</p>
+    <img src="/static/personal/img/img_flask_15.png">
+    <p>完成訂單。</p>
+    <img src="/static/personal/img/img_flask_16.png">
+</main>
+{% endblock %}

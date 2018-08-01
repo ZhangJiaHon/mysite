@@ -1,0 +1,22 @@
+{% extends 'personal/temp.html' %}
+
+{% block content %}
+<main id="priject">
+    <h1 class="lg-text">My
+        <span>project</span>
+    </h1>
+
+    <div class="boxes">
+
+        <div class="boxes-item">
+            <a href="{% url 'shopcart' %}">
+                <img src="/static/personal/img/img_home_1.png" alt="project">
+            </a>
+            <a href="{% url 'shopcart' %}" class="btn-light">
+                shop cart
+            </a>
+        </div>
+
+    </div>
+</main>
+{% endblock %}

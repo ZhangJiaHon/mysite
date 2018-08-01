@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-app_name = 'python'
+
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('pyqt5_1', views.pyqt5_1, name='pyqt5_1'),
-    path('pyqt5_2', views.pyqt5_2, name='pyqt5_2'),
-    path('pyqt5_3', views.pyqt5_3, name='pyqt5_3'),
+    path('', views.python, name='python'),
+    path('pyqt_1', views.pyqt51, name='pythonqt_1'),
+    path('pyqt_2', views.pyqt52, name='pythonqt_2'),
+    path('pyqt_3', views.pyqt53, name='pythonqt_3'),
+
 ]

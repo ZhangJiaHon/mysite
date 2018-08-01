@@ -1,0 +1,50 @@
+{% extends "personal/temp.html" %}
+
+{% block content %}
+<main id="learn">
+    <h1 class="lg-text">About
+        <span>Learning</span>
+    </h1>
+
+    <div class="boxes">
+
+        <div class="boxes-item">
+            <a href="{% url 'html' %}">
+                <img src="/static/personal/img/img_html.png" alt="learn">
+            </a>
+            <a href="{% url 'html' %}" class="btn-light">
+                HTML
+            </a>
+        </div>
+
+        <div class="boxes-item">
+            <a href="{% url 'css' %}">
+                <img src="/static/personal/img/img_css.png" alt="learn">
+            </a>
+            <a href="{% url 'css' %}" class="btn-light">
+                CSS
+            </a>
+        </div>
+
+        <div class="boxes-item">
+            <a href="{% url 'javascript' %}">
+                <img src="/static/personal/img/img_js.png" alt="learn">
+            </a>
+            <a href="{% url 'javascript' %}" class="btn-light">
+                JavaScript
+            </a>
+        </div>
+
+        <div class="boxes-item">
+            <a href="{% url 'docker' %}">
+                <img src="/static/personal/img/img_docker.png" alt="learn">
+            </a>
+            <a href="{% url 'docker' %}" class="btn-light">
+                Docker
+            </a>
+        </div>
+
+    </div>
+    
+</main>
+{% endblock %}
