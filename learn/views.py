@@ -17,3 +17,9 @@ def javascript(request):
 
 def docker(request):
     return render(request, 'learn/docker.html')
+
+def foundation(request):
+    return render(request, 'learn/foundation.html')
+
+def laravel(request):
+    return render(request, 'learn/laravel.html')

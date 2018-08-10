@@ -20,4 +20,5 @@ from . import views
 urlpatterns = [
     path('', views.project, name='project'),
     path('shopcart', views.shopcart, name='shopcart'),
+    path('flaskscrapy', views.flaskscrapy, name='flaskscrapy'),
 ]

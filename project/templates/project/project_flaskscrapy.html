@@ -1,0 +1,41 @@
+{% extends 'personal/temp.html' %}
+
+{% block content %}
+<main>
+    <button onclick="reTop()" class="btn-retop">Top</button>
+    
+    <h1 class="lg-text">flask scrapy
+        <span></span>
+    </h1>
+    <p>此為使用flask架成的網站和爬蟲的結合，使用三個和爬蟲相關的框架或套件，
+        來爬網站的圖片。</p>
+    <p>基本上，在網頁中輸入想要爬的網址，然後按submit，網址就會藉由javascript傳到server，
+        然後執行爬蟲程式，並將爬完的資料再傳回，並以一張的形式呈現在網頁上，
+        可以藉由前一張或下一張的按鍵，來瀏覽。
+    </p>
+    <img src="/static/personal/img/img_flask_scrapy1.png">
+    <p>這是主頁面，這次只有一個頁面，藉由js來達成切換。</p>
+    <img src="/static/personal/img/img_flask_scrapy2.png">
+    <p>每個頁面都長的一樣，只是後面執行的程式不同。</p>
+    <img src="/static/personal/img/img_flask_scrapy3.png">
+    <p>這是爬jquery網站上的圖片。</p>
+    <img src="/static/personal/img/img_flask_scrapy4.png">
+    <p>這是切換到下一張</p>
+    <img src="/static/personal/img/img_flask_scrapy5.png">
+    <p>這是爬iT邦上某個頁面。</p>
+    <p>&nbsp;</p>
+    <p>這三個裡面scrapy執行的最慢，因為是先存到mongodb後，再從mongodb取出來，
+        beautifulsoup則是作者一段時間沒更新了，curl是bash底下的工具。
+    </p>
+    <p>&nbsp;</p>
+    <p>爬到的資料不一定能用，要經過整理才能取得比較乾淨的資料，否則拿到的網址來源會不完整，
+        可能多也可能少，這次是只有爬&#60img&#62 tag，後來發現&#60a&#62 tag 下有圖片，且加了許多後綴，可能不太好處理。
+    </p>
+    <p>&nbsp;</p>
+    <p>（近期看了javascript編成精解等資料，才比較了解一些觀念，如POST、減少recursive等。）</p>
+    <p>gitlab: <a href="https://gitlab.com/zhang1/flask-scrapy">https://gitlab.com/zhang1/flask-scrapy</a></p>
+    <p>&nbsp;</p>
+    <p>參考 flask document、google搜尋的資料等</p>
+
+</main>
+{% endblock %}

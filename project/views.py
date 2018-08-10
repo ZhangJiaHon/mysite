@@ -9,3 +9,6 @@ def project(request):
 def shopcart(request):
     return render(request, 'project/project_shopcart.html')
 
+def flaskscrapy(request):
+    return render(request, 'project/project_flaskscrapy.html')
+

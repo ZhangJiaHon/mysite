@@ -1,0 +1,28 @@
+{% extends 'personal/temp.html' %}
+
+{% block content %}
+<main id="learn">
+    <button onclick="reTop()" class="btn-retop">Top</button>
+    
+    <h1 class="lg-text">Foundation
+        <span></span>
+    </h1>
+
+    <div>
+        <p>foundation是一個框架，和bootstrap很相似，大部分的設定都已經設好了，
+            需要什麼功能可以參考官網上的設置，很快可以做好，不過因為要面對大眾，每個人的需求都不同，
+            CSS和Javascript就包含了符合大眾的設置，所以事先載入的CSS和Javascript就比較大，
+            裡面的很多功能其實都沒用到。
+        </p>
+        <img src="/static/personal/img/img_foundation1.png" alt="picture">
+        <p>剛裝好大致上，配合liveserver在瀏覽器上的樣子。</p>
+        <img src="/static/personal/img/img_foundation2.png" alt="picture">
+        <p>設置搜索和menu。</p>
+        <img src="/static/personal/img/img_foundation3.png" alt="picture">
+        <p>設置loginform</p>
+        <img src="/static/personal/img/img_foundation4.png" alt="picture">
+        <p>設置tab可以切換內容。</p>
+    </div>
+
+</main>
+{% endblock %}

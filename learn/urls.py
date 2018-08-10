@@ -23,4 +23,6 @@ urlpatterns = [
     path('css', views.css, name='css'),
     path('javascript', views.javascript, name='javascript'),
     path('docker', views.docker, name='docker'),
+    path('foundation', views.foundation, name='foundation'),
+    path('laravel', views.laravel, name='laravel'),
 ]
